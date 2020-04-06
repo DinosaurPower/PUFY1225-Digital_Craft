@@ -22,7 +22,6 @@ function draw() {
   fill("#efefef");
    rect(windowHeight/2, windowWidth/2, windowWidth/1.3, windowHeight/1.75); //second cool rectangle
 
-  gif_createImg.mode (CENTER);
   gif_createImg.position(windowHeight/7, windowWidth/2); //I ad my gif and once it starts working I will set up its size and position
   
   textSize(32);
