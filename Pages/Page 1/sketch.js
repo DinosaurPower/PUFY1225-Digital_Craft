@@ -23,7 +23,7 @@ function draw() {
    rect(windowHeight/2, windowWidth/2, windowWidth/1.3, windowHeight/1.75); //second cool rectangle
 
   
-  gif_createImg.position(windowHeight/3.5, windowWidth/2); //I ad my gif and once it starts working I will set up its size and position
+  gif_createImg.position(windowHeight/4, windowWidth/2); //I ad my gif and once it starts working I will set up its size and position
    gif_createImg.size(windowHeight/2.5, windowWidth/4);
   textSize(32);
   text.position(windowWidth/2, windowHeight/2);
