@@ -7,7 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowHeight, windowWidth);
-link = createA('https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Page%202', 'this is a link','self'); //I create link
+link = createA('https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Page%202', 'enter name','self'); //I create link
   link.position(windowWidth/3,windowHeight/1.05); //I set up link position
 }
 
@@ -23,8 +23,9 @@ function draw() {
    rect(windowHeight/2, windowWidth/2, windowWidth/1.3, windowHeight/1.75); //second cool rectangle
  image(gif_loadImg, 50, 50);
   
-image(gif_loadImg, 50, 50);
   gif_createImg.position(50, 350); //I ad my gif and once it starts working I will set up its size and position
+  textSize(32);
+text('A young man stands in his bedroom. It just so happens that today, the 8th of April, 2020, is this young mans birthday. Though it was eighteen years ago he was given life, it is only today he will be given a name', 10, 30);
 
 
 
