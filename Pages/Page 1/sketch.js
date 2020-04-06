@@ -25,7 +25,7 @@ function draw() {
   gif_createImg.position(windowHeight/2, windowWidth/2); //I ad my gif and once it starts working I will set up its size and position
   
   textSize(32);
-  text.position(windowWidth/2, windowHeight/2);
+  textPosition(windowWidth/2, windowHeight/2);
 text('A young man stands in his bedroom. It just so happens that today, the 8th of April, 2020, is this young mans birthday. Though it was eighteen years ago he was given life, it is only today he will be given a name');
 
 
