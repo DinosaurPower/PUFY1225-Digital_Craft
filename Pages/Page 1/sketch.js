@@ -9,14 +9,14 @@ function setup() {
   createCanvas(windowHeight, windowWidth);
 link = createA('https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Page%202', 'enter name','self'); //I create link
   link.position(windowWidth/3,windowHeight/1.05); //I set up link position
+  
 }
 
 function draw() {
-  background(220);
+  background("#535353");
   rectMode (CENTER); //make my life easier
   noStroke();
-   fill("#535353"); //color
-  rect(windowHeight/2,windowWidth/2,windowWidth*2, windowHeight*2); //background
+  
    fill("#c6c6c6");
   rect(windowHeight/2, windowWidth/2, windowWidth/1.3, windowHeight/1.3); //One cool rectangle
   fill("#efefef");
