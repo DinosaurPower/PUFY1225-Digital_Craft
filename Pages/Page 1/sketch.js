@@ -23,7 +23,8 @@ function draw() {
    rect(windowHeight/2, windowWidth/2, windowWidth/1.3, windowHeight/1.75); //second cool rectangle
 
   
-  gif_createImg.position(50, 350); //I ad my gif and once it starts working I will set up its size and position
+  gif_createImg.position(windowHeight/2, windowWidth/2); //I ad my gif and once it starts working I will set up its size and position
+   gif_createImg.size(50, 350);
   textSize(32);
   text.position(windowWidth, windowHeight);
 text('A young man stands in his bedroom. It just so happens that today, the 8th of April, 2020, is this young mans birthday. Though it was eighteen years ago he was given life, it is only today he will be given a name', 10, 30);
