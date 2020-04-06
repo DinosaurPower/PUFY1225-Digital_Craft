@@ -7,7 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowHeight, windowWidth);
-link = createA('http://p5js.org/', 'this is a link','_blank'); //I create link
+link = createA('https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Page%202', 'this is a link','self'); //I create link
   link.position(windowWidth/3,windowHeight/1.05); //I set up link position
 }
 
