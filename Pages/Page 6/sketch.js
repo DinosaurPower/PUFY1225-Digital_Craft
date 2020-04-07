@@ -1,8 +1,8 @@
-var gif_loadImg, gif_createImg;
+var png_loadImg, png_createImg;
 
 function preload() {
 
-  gif_createImg = createImg("Sprite6.png"); //I upload my gif
+  png_createImg = createImg("Sprite6.png"); //I upload my gif
 }
 
 function setup() {
