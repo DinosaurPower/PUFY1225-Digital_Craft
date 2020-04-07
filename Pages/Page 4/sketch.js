@@ -11,7 +11,7 @@ link = createA('https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Pag
   link.position(windowHeight/5,windowWidth/1.05); //I set up link position
   
   link2 = createA('https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Page%206', 'pester mate','self'); //I create link
-  link2.position(windowHeight/5.5,windowWidth/1.05); //I set up link position
+  link2.position(windowHeight/5,windowWidth/1.75); //I set up link position
   
 }
 
