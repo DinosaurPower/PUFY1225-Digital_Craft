@@ -2,7 +2,7 @@ var png_loadImg, png_createImg;
 
 function preload() {
 
-  gif_createImg = createImg("Sprite4.png", 0.80); //I upload my gif
+ png_createImg = createImg("Sprite4.png", 0.80); //I upload my gif
 }
 
 function setup() {
