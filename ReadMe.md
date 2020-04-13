@@ -26,6 +26,8 @@
 * [Possum](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Opossum/)
 * [Robot](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Robot/)
 
+## Homework Week 9
+* [Birbs](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Birbs/)
 
 ## Miscellaneous
 
