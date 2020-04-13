@@ -1,7 +1,7 @@
 var Observations;
 var Photos;
 function preload(){
-	stats = loadTable("Peregrines.csv");
+	stats = loadTable("Assets/Peregrines.csv");
 }
 function setup() {
 
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background("#d0d3ee");
  for(var x= 100; x < windowWidth; x+=400){
     for(var y= 100; y < windowHeight; y+=300){
     
