@@ -23,7 +23,7 @@ function draw() { //time to make fun
     
 for (var r = Photos/100;){ //trying to relate intensivity of red to amount of the photos of the birds taken
 	
- for (var Sc = Observations/100;){ //trying to make scale relate ro amount of the birbs observed
+ for (var Sc = Observations/100;) { //trying to make scale relate ro amount of the birbs observed
   peregrine(Sc, x, y, r, 150, 150); //Now I generate birds, see shape code below
  }
  }
