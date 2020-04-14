@@ -1,5 +1,5 @@
-var Observations; //I allow some positions from the table
-var Photos;
+var observations; //I allow some positions from the table
+var photos;
 function preload(){
 	stats = loadTable("Peregrines.csv"); //I upload my data
 }
@@ -7,9 +7,9 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
   var rowCount = stats.getRowCount(); 
-	Observarions = [];
+	observarions = [];
 	for (var i = 0; i < rowCount; i++){
-		Observations[i] = stats.getNum(i, 1); //I forgot what it is, but it was in the professor's code w/ data so I ad it
+		observations[i] = stats.getNum(i, 1); //I forgot what it is, but it was in the professor's code w/ data so I ad it
 	}
 }
 
@@ -21,12 +21,11 @@ function draw() { //time to make fun
 //I wanted to make birds scatter on the certain distance from each other 
     //It doesn't work for some reason but okay
     
-for (var r = Photos/100;){ //trying to relate intensivity of red to amount of the photos of the birds taken
+var r = photos/100; //trying to relate intensivity of red to amount of the photos of the birds taken
 	
- for (var Sc = Observations/100;) { //trying to make scale relate ro amount of the birbs observed
+var Sc = observations/100; //trying to make scale relate ro amount of the birbs observed
   peregrine(Sc, x, y, r, 150, 150); //Now I generate birds, see shape code below
- }
- }
+ 
 }
 
 }
