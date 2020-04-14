@@ -27,9 +27,8 @@ var Sc = observations/100; //trying to make scale relate ro amount of the birbs 
   peregrine(Sc, x, y, r, 150, 150); //Now I generate birds, see shape code below
  
 }
-
 }
-
+}
 function peregrine(Sc, x, y, r, g, b) { //a shape of the birb
 	
   fill(r, g, b);
