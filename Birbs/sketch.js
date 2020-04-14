@@ -32,6 +32,7 @@ function draw() {
 function peregrine(Sc, x, y, r, g, b) {
   fill(r, g, b);
   scale(Sc);
+var Sc = Observations;
   beginShape();
   noStroke();
   vertex(x + 20, y + 20);
