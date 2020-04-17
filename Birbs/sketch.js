@@ -1,7 +1,7 @@
 var observations; //I allow some positions from the table
 var photos;
 function preload(){
-	stats = loadTable("Peregrines.csv"); //I upload my data
+	stats = loadTable("Peregrines.csv", "CSV", "Headers"); //I upload my data
 }
 function setup() {
 
