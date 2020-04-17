@@ -1,5 +1,5 @@
-var observations; //I allow some positions from the table
-var photos;
+var observations[]; //I allow some positions from the table
+var photos[];
 var stats;
 
 function preload(){
