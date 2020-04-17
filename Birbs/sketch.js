@@ -1,11 +1,15 @@
 var observations; //I allow some positions from the table
 var photos;
+var stats;
+
 function preload(){
 	stats = loadTable("Peregrines.csv", "CSV", "Headers"); //I upload my data
 }
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
+
+	
   var rowCount = stats.getRowCount(); 
 	observarions = [];
 	for (var i = 0; i < rowCount; i++){
