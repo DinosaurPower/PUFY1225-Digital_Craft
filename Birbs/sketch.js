@@ -9,7 +9,7 @@ function setup() {
   var rowCount = stats.getRowCount(); 
 	observarions = [];
 	for (var i = 0; i < rowCount; i++){
-		observations[i] = stats.getNum(i, 1); //I forgot what it is, but it was in the professor's code w/ data so I ad it
+		observations[i] = stats.getNum(i, "observations"); //I forgot what it is, but it was in the professor's code w/ data so I ad it
 	}
 }
 
