@@ -14,6 +14,12 @@ function setup() {
 	observarions = [];
 	for (var i = 0; i < rowCount; i++){
 		observations[i] = stats.getNum(i, "observations"); //I forgot what it is, but it was in the professor's code w/ data so I ad it
+		
+var rowCount = stats.getRowCount(); 
+	photos = [];
+	for (var i = 0; i < rowCount; i++){
+		photos[i] = stats.getNum(i, "photos");	
+	
 	}
 }
 
