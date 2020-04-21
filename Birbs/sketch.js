@@ -13,7 +13,8 @@ function setup() {
   var rowCount = stats.getRowCount(); 
   //print(rowCount); //testing
   observations = stats.getColumn('observations');
-  var counter = 0;
+  photos = stats.getColumn('photos');
+  var counter = counter++;
     for(var x = 0; x < width; x+=width/5){
       for(var y = 0; y < height; y+=height/5){
         
@@ -23,10 +24,10 @@ function setup() {
     
       //var r = photo/100; //trying to relate intensivity of red to amount of the photos of the birds taken
         // print("index " + f + " : " +observations[f]);
-        var r = 255;
-    
-        var sc = map(observations[0], 0, 558012, 0, 1) ; //trying to make scale relate ro amount of the birbs observed
-        print("x: " + x + ", y: " + y + ", scale: "+ sc);
+        
+   
+        var sc = map(observations[15], 0, 558012, 0, 2); //trying to make scale relate ro amount of the birbs observed
+        var r = map(photos[3], 0, 0, 0, 255)
         peregrine(sc, x, y, r, 150, 150); //Now I generate birds, see shape code below
         // counter++;
  
