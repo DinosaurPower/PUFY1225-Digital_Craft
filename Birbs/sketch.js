@@ -1,49 +1,48 @@
-var observations[]; //I allow some positions from the table
-var photos[];
 var stats;
+var observations = []; //Claim as an array right away!
+var photos = [];
 
 function preload(){
-	stats = loadTable("Peregrines.csv", "CSV", "Headers"); //I upload my data
+	stats = loadTable("Peregrines.csv", "csv", "header");                  
 }
+
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-
-	
+  background("#d0d3ee");
   var rowCount = stats.getRowCount(); 
-	observarions = [];
-	for (var i = 0; i < rowCount; i++){
-		observations[i] = stats.getNum(i, "observations"); //I forgot what it is, but it was in the professor's code w/ data so I ad it
-		
-var rowCount = stats.getRowCount(); 
-	photos = [];
-	for (var i = 0; i < rowCount; i++){
-		photos[i] = stats.getNum(i, "photos");	
-	
-	}
+  //print(rowCount); //testing
+  observations = stats.getColumn('observations');
+  var counter = 0;
+    for(var x = 0; x < width; x+=width/5){
+      for(var y = 0; y < height; y+=height/5){
+        
+      
+    //I wanted to make birds scatter on the certain distance from each other 
+    //It doesn't work for some reason but okay
+    
+      //var r = photo/100; //trying to relate intensivity of red to amount of the photos of the birds taken
+        // print("index " + f + " : " +observations[f]);
+        var r = 255;
+    
+        var sc = map(observations[0], 0, 558012, 0, 1) ; //trying to make scale relate ro amount of the birbs observed
+        print("x: " + x + ", y: " + y + ", scale: "+ sc);
+        peregrine(sc, x, y, r, 150, 150); //Now I generate birds, see shape code below
+        // counter++;
+ 
+      }
+    }
 }
 
 function draw() { //time to make fun
-  background("#d0d3ee");
- for(var x= 100; x < windowWidth; x+=300){
-    for(var y= 100; y < windowHeight; y+=300){
-    
-//I wanted to make birds scatter on the certain distance from each other 
-    //It doesn't work for some reason but okay
-    
-var r = photos/100; //trying to relate intensivity of red to amount of the photos of the birds taken
-	
-var Sc = observations/100; //trying to make scale relate ro amount of the birbs observed
-  peregrine(Sc, x, y, r, 150, 150); //Now I generate birds, see shape code below
- 
-}
-}
-}
-function peregrine(Sc, x, y, r, g, b) { //a shape of the birb
+
+} 
+
+
+function peregrine(sc, x, y, r, g, b) { //a shape of the birb
 	
   fill(r, g, b);
- 
-	scale(Sc);
+  scale(sc);
 
   beginShape();
   noStroke();
@@ -65,8 +64,6 @@ function peregrine(Sc, x, y, r, g, b) { //a shape of the birb
   vertex(x - 15, y + 115);
   vertex(x - 100, y + 110);
   vertex(x + 20, y + 50);
-
-
 
   endShape(CLOSE);
   
