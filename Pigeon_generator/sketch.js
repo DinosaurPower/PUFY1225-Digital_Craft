@@ -5,7 +5,7 @@ let c;
 let t;
 let b;
 let colors = ['#ff7cff', '#ffb89c', '#ffc091', '#ffaf7d'];
-let blue = ['#85d6ae', '#777777', '#a3bef0'];
+let blue = ['#85d6ae', '#777777', '#a3bef0', '#FFFFFF', '#777777'];
  let value = 0;
 let d;
 let tip = 0;
@@ -202,18 +202,14 @@ function greet() {
 
 }
 
-function keyPressed(SHIFT){
-
-  fill(0);
-    textSize(12);
-  translate(0, 20);
-  textAlign(RIGHT);
-  text('space to control wing tip', 450, 400);
-   text('mouse click to control stripe', 450, 410);
-   text('mouse move to choose size', 450, 420);
-  textSize(10);
- 
+function keyPressed(BACKSPACE) {
+  if (tip === 0) {
+    tip = r;
+  } else {
+    tip = 0;
+  }
 }
+
 
   
 
