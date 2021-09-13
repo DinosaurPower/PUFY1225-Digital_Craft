@@ -34,6 +34,7 @@
 * [Bonus~](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Space%20oddity/)
 * [Bonus 2~](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Rave/)
 * [Box rave](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Trip/)
+*[Pigeon generator](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pigeon_generator/)
 
 [Tryout](https://dinosaurpower.github.io/PUFY1225-Digital_Craft/Pages/Page%201)
 
